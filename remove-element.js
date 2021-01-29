@@ -3,9 +3,9 @@
 const removeElement = (nums, val) => {
     let p1 = 0
 
-    for (i=0; i<nums.length; i++) {
-        if ( nums[i] != val) {
-            nums[p1] = nums[i]
+    for (let p2=0; p2<nums.length; p2++) {
+        if ( nums[p2] != val) {
+            nums[p1] = nums[p2]
             p1++
         }
     }
