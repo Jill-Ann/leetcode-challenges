@@ -1,12 +1,16 @@
 // Given an array arr of integers, check if there exists two integers N and M such that N is the double of M ( i.e. N = 2 * M).
 
 const checkIfExist = arr => {
+    let checked = []
 
-    while (arr.length) {
-        let n = arr.pop()
-        if(arr.includes(n*2) || arr.includes(n/2)) return true
+    for (let i = 0; i < arr.length; i++) {
+        let current = arr[i]
+
+        if(checked.includes(current * 2) || checked.includes(current/2)) {
+            return true
+        }
+        checked.push(current)
     }
-    
     return false
 }
 
