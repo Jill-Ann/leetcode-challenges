@@ -5,8 +5,8 @@ const replaceElements = arr => {
 
     for (let i = arr.length - 1; i >= 0; i--) {
 
-        if (i==arr.length -1) {
-            max = Math.max(arr[i], max)
+        if (i ==  arr.length -1) {
+            max = arr[i]
             arr[i] = -1
         } else {
             let temp = arr[i]
